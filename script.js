@@ -26,25 +26,21 @@ function generatePassword() {
   var charLength = window.prompt(
     "Using the number pad, choose a password length between 8-128"
   )
-  if (lowerChoice === "y") {
+  while (lowerChoice === "y") {
     password = password.concat(lowerChar);
     console.log(password);
-    return;
   }
-  if (upperChoice === "y") {
+  while (upperChoice === "y") {
     password = password.concat(upperChar);
     console.log(password);
-    return;
   }
-  if (numChoice === "y") {
+  while (numChoice === "y") {
     password = password.concat(numChar);
     console.log(password);
-    return;
   }
-  if (specChar === "y") {
+  while (specChar === "y") {
     password = password.concat(specChar);
     console.log(password);
-    return;
   }
   // for (var i = 0; i <= passwordLength; i++) {
   //   var randomNumber = Math.floor(Math.random() * password.length);
